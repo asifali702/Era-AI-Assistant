@@ -1,6 +1,6 @@
-# [Project name]
+# ERA AI Assistant
 
-_Replace the heading above with the project's name, and this line with one sentence describing what this app does for users._
+An interactive UI prototype for an AI voice assistant mobile app, displayed inside a realistic phone frame. Tap through four screens: Splash, Home (with mic button), Listening, and Settings.
 
 ## Run & Operate
 

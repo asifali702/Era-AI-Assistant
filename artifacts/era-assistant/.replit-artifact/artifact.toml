@@ -1,0 +1,27 @@
+kind = "web"
+previewPath = "/"
+title = "ERA AI Assistant"
+version = "1.0.0"
+id = "artifacts/era-assistant"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 23576
+
+[services.development]
+run = "pnpm --filter @workspace/era-assistant run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/era-assistant", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/era-assistant/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "23576"
+BASE_PATH = "/"
