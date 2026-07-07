@@ -1,0 +1,1 @@
+- [ERA mobile Expo port](era-mobile-expo.md) — animation hooks must be in extracted components (not .map()); EqualizerBar/PulseRing/ToggleRow pattern used to satisfy this rule.
